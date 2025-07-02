@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oop-game</title>
 
     <link rel="stylesheet" href="./CSS/main.css">
-
+    <script src="./js/main.js" defer></script>
 
 </head>
+
 <body>
-    <h1> Game Project</h1>
+    <h1> Shark Attack</h1>
+
+    <div class="header"></div>
+    score: <strong class="score">0</strong> <!--(ID)to find and update this exact element in JS -->
 
     <div id="board">
-    <div id="player"></div>
+        <div id="player"></div>
+        <div class="obstacle"></div>
+        <div class="newWave"></div>
+        <div class="lionFish"></div>
+
     </div>
-    
-    <script src="./js/main.js"></script>
+
+
+
 </body>
+
 </html>
