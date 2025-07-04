@@ -1,48 +1,45 @@
-#score {
-    margin-bottom: 40px;
-    height: 20px;
-    width: 20px;
-    background-color: aquamarine;
-    position: relative;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 #board {
-    width: 95vw;
-    height: 800px;
-    background-color: rgb(100, 139, 236);
-    border-right: 100px solid rgba(239, 225, 114, 0.955);
-    margin-top: 30px;
     position: relative;
-    /*this allows the player inside the board */
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background-ocean.jpg");
+    background-size: 100% 100%; /* force it to stretch */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Removed invalid line: 'back 20;' */
+}
+
+#score-container {
+    position: absolute;
+    padding: 0.5vh 3vw;
+    font-size: 26px;
+    background-color: aquamarine;
+    right: 0;
+    top: 0;
 }
 
 #player {
-    width: 80px;
-    height: 80px;
     background-color: salmon;
     position: absolute;
-    /*this allows the player inside the board */
-    border-radius: 30%;
-    /* This makes it a circle */
-    bottom: 50px;
-    left: 20px
+    background-image: url("turtle.png");
+
 }
-.newWave {
-    width: 20px;
-    height: 80px;
+
+.wave {
     background-color: rgb(197, 219, 225);
-    position: absolute; /*this allows the player inside the board */
-    top: 400px;
-    right: 50px;
-
+    position: absolute;
+    background-image: url("cean-waves.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.lionFish {
-    width: 40px;
-    height: 40px;
-    background-color: rgb(20, 1, 1);
-    position: absolute; /*this allows the player inside the board */
-    border-radius: 50%;
-    top: 50px;
-    right: 20px;
 
+
+#PageGameover {
+    text-align: center;
+    background-color: rgb(31, 186, 228);
 }
