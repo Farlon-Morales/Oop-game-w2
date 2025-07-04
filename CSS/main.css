@@ -8,13 +8,14 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url("background-ocean.jpg");
-    background-size: 100% 100%; /* force it to stretch */
+    background-size: 100% 100%;
+    /* force it to stretch */
     background-position: center;
     background-repeat: no-repeat;
     /* Removed invalid line: 'back 20;' */
 }
 
-#score-container {
+#time-container {
     position: absolute;
     padding: 0.5vh 3vw;
     font-size: 26px;
@@ -26,8 +27,11 @@ body {
 #player {
     background-color: salmon;
     position: absolute;
-    background-image: url("turtle.png");
-
+    background-image: url("swimmer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
 }
 
 .wave {
@@ -42,4 +46,7 @@ body {
 #PageGameover {
     text-align: center;
     background-color: rgb(31, 186, 228);
+     background-image: url("background-gameover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

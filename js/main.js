@@ -76,8 +76,8 @@ const allWavesArr = [];
 
 // Create waves
 setInterval(() => {
-    const randomHeight = Math.random() * (30 - 1) + 1; // random height between 1 and 30
-    const maxY = 100 - randomHeight;                   // ensure wave stays within bounds
+    const randomHeight = Math.random() * (30 - 1) + 1;
+    const maxY = 100 - randomHeight;
     const randomY = Math.random() * maxY;
 
     const newWaves = new Wave(randomY, randomHeight);
@@ -96,7 +96,7 @@ setInterval(() => {
             player.positionY + player.height > waveInstance.positionY
         ) {
             console.log("collision detected");
-          
+            location.href = "gameover.html"
         }
     });
 }, 100);
